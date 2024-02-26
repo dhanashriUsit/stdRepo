@@ -11,7 +11,7 @@ public class StudentController {
 
 	StudentService st=new StudentService();
 	
-	@GetMapping("show")
+	@GetMapping("/")
 	public String show() {
 		System.out.println("......");
 		System.out.println("ooooolllll");
