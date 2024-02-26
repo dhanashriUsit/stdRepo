@@ -1,5 +1,6 @@
 package com.example.demoProject.student;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 
-	StudentService st=new StudentService();
+	@Autowired
+	StudentService st;
 	
 	@GetMapping("/")
 	public String show() {
