@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@CrossOrigin(origins = "http://localhost:8082")
+//@CrossOrigin(origins = "http://localhost:8082")
 @RestController
 public class StudentController {
 
@@ -16,5 +16,10 @@ public class StudentController {
 		System.out.println("......");
 		System.out.println("ooooolllll");
 		return st.show();
+	}
+	
+	@GetMapping("/display")
+	public String display() {
+		return "display API";
 	}
 }
