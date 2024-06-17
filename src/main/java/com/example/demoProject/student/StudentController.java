@@ -35,8 +35,8 @@ public class StudentController {
 	        return st.getAllStudents();
 	    }
 	
-	@GetMapping("/display")
-	public String display() {
+	  @GetMapping("/display")
+	  public String display() {
 		return "display API";
-	}
+	  }
 }
